@@ -1,0 +1,107 @@
+\documentclass[journal,12pt,twocolumn]{IEEEtran}
+
+\usepackage[utf8]{inputenc}
+\usepackage{amsmath}
+\usepackage{amssymb}
+
+\newcommand{\myvec}[1]{\ensuremath{\begin{pmatrix}#1\end{pmatrix}}}
+\newcommand{\solution}{\noindent \textbf{Solution: }}
+
+\title{AI1110 Assignment-1}
+\author{Anshul Sangrame CS21BTECH11004}
+
+\begin{document}
+
+\maketitle
+
+\noindent \textbf{Question 1(a)} Find the Values of '$x $' and '$y $' if: 
+$$
+2
+\myvec{
+x & 7 \\
+9 & y-7 \\
+}
++
+\myvec{
+6 & -7 \\
+4 & 5 \\
+}
+=
+\myvec{
+10 & 7 \\
+22 & 15 \\
+}
+$$
+
+\solution
+
+
+\begin{align}
+2
+\myvec{
+x & 7 \\
+9 & y-7 \\
+}
++
+\myvec{
+6 & -7 \\
+4 & 5 \\
+}
+=
+\myvec{
+10 & 7 \\
+22 & 15 \\
+}
+\\
+2
+\myvec{
+x & 7 \\
+9 & y-7 \\
+}
+=
+\myvec{
+10 & 7 \\
+22 & 15 \\
+}
+-
+\myvec{
+6 & -7 \\
+4 & 5 \\
+}
+\\
+\implies
+\myvec{
+2x & 14 \\
+18 & 2y-14 \\
+}
+=
+\myvec{
+4 & 14\\
+18 & 10\\
+}
+\end{align}
+
+
+\noindent By comparing every element of both matrix we get,
+
+\begin{align}
+2x &= 4\\
+\label{x}
+\implies
+x &= 2
+\end{align}
+
+\begin{align}
+2y-14 &= 10\\
+\label{y}
+\implies
+y &= 12
+\end{align}
+
+
+\noindent $ \therefore$ From equation \ref{x} and \ref{y},  $x = 2$ and $y=12 $
+
+
+
+\end{document}
+
