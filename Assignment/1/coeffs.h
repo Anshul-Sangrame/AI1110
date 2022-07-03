@@ -11,6 +11,7 @@ double **transpose(double **a,  int m, int n);
 void uniform(char *str, int len);
 void gaussian(char *str, int len);
 double mean(char *str);
+double var(char *str);
 //End function declaration
 
 
@@ -251,3 +252,27 @@ fclose(fp);
 
 }
 //End function for generating Gaussian random numbers
+
+//Defining the function for calculating the variance of random numbers
+double var(char *str)
+{
+int i=0,c;
+FILE *fp;
+double x, temp=0.0,term;
+double m = mean(str);
+
+fp = fopen(str,"r");
+//get numbers from file
+while(fscanf(fp,"%lf",&x)!=EOF)
+{
+//Count numbers in file
+i=i+1;
+//Add all terms
+term = (x-m)*(x-m);
+temp = temp+term;
+}
+fclose(fp);
+temp = temp/(i-1);
+return temp;
+
+}
