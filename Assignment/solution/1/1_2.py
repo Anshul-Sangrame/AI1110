@@ -30,7 +30,7 @@ plt.xlabel('$x$')
 plt.ylabel('$F_X(x)$')
 
 #if using termux
-plt.savefig('./figs/uni_cdf.pdf')
+plt.savefig('../figs/uni_cdf.pdf')
 #plt.savefig('./figs/uni_cdf.eps')
 #subprocess.run(shlex.split("termux-open ../figs/uni_cdf.pdf"))
 #if using termux
