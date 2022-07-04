@@ -27,7 +27,7 @@ for i in range(0,30):
 plt.plot(x.T,err)#plotting the CDF
 plt.grid() #creating the grid
 plt.xlabel('$x$')
-plt.ylabel('$F_X(x)$')
+plt.ylabel('$F_V(x)$')
 
 #if using termux
 plt.savefig('../figs/V_cdf.pdf')
