@@ -282,13 +282,15 @@ return temp;
 void V_dist(char *str, int len) {
 int i;
 double term;
+double U;
 FILE *fp;
 
 fp = fopen(str,"w");
 //Generate numbers
 for (i = 0; i < len; i++)
 {
-term = (-2)* log(1-(double)rand()/RAND_MAX);
+U = (double)rand()/RAND_MAX;
+term = (-2)* log(1-U);
 fprintf(fp,"%lf\n",term);
 }
 fclose(fp);
