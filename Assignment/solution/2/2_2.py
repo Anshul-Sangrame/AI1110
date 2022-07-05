@@ -1,6 +1,8 @@
 #Importing numpy, scipy, mpmath and pyplot
 import numpy as np
 import matplotlib.pyplot as plt
+import mpmath as mp
+import scipy
 
 #if using termux
 
@@ -22,8 +24,12 @@ for i in range(0,30):
         err_n = np.size(err_ind) #computing the probability
         err.append(err_n/simlen) #storing the probability values in a list
 
+def Q(x):
+        return 0.5*(1-mp.erf(-x/mp.sqrt(2)))
 
-plt.plot(x.T,err)#plotting the CDF
+vect = scipy.vectorize(Q,otypes=[np.float64])
+plt.plot(x.T,err,"o")#plotting the CDF
+plt.plot(x,vect(x))
 plt.grid() #creating the grid
 plt.xlabel('$x$')
 plt.ylabel('$F_X(x)$')
