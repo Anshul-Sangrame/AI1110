@@ -28,11 +28,11 @@ def cdf(x):
 	if x>=0 and x<=1:
 		return x
 	elif x>1:
-		return 1
+		return 1.0
 	else:
-		return 0
+		return 0.0
 
-vect = scipy.vectorize(cdf,otypes=[np.float64])	
+vect = scipy.vectorize(cdf)
 
 plt.plot(x.T,err,"o")#plotting the CDF
 plt.plot(x,vect(x))

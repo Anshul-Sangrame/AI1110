@@ -25,11 +25,14 @@ for i in range(0,30):
         err.append(err_n/simlen) #storing the probability values in a list
 
 def Q(x):
-        return 0.5*(1-mp.erf(-x/mp.sqrt(2)))
+        return 0.5*(1-mp.erf(x/mp.sqrt(2)))
 
-vect = scipy.vectorize(Q,otypes=[np.float64])
+def cdf(x):
+        return 1 - Q(x)
+
+vec_cdf = scipy.vectorize(cdf,otypes=[np.float64])
 plt.plot(x.T,err,"o")#plotting the CDF
-plt.plot(x,vect(x))
+plt.plot(x,vec_cdf(x))
 plt.grid() #creating the grid
 plt.xlabel('$x$')
 plt.ylabel('$F_X(x)$')

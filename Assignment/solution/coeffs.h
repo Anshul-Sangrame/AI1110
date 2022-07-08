@@ -303,17 +303,18 @@ void triangular(char *str, int len)
 {
 int i,j;
 double temp;
+double U1,U2;
 FILE *fp;
 
 fp = fopen(str,"w");
 //Generate numbers
 for (i = 0; i < len; i++)
 {
-temp = 0;
-for (j = 0; j < 2; j++)
-{
-temp += (double)rand()/RAND_MAX;
-}
+
+U1 = (double)rand()/RAND_MAX;
+U2 = (double)rand()/RAND_MAX;
+
+temp = U1 + U2;
 fprintf(fp,"%lf\n",temp);
 }
 fclose(fp);
