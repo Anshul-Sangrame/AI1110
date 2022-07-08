@@ -352,6 +352,12 @@ INPUT ./figs/gauss_pdf.pdf
 INPUT /home/anshul/programming/AI1110/Assignment/solution/./figs/V_cdf.pdf
 INPUT ./figs/V_cdf.pdf
 INPUT ./figs/V_cdf.pdf
+INPUT /home/anshul/programming/AI1110/Assignment/solution/./figs/tri_cdf_empirical.pdf
+INPUT ./figs/tri_cdf_empirical.pdf
+INPUT ./figs/tri_cdf_empirical.pdf
+INPUT /home/anshul/programming/AI1110/Assignment/solution/./figs/tri_pdf_empirical.pdf
+INPUT ./figs/tri_pdf_empirical.pdf
+INPUT ./figs/tri_pdf_empirical.pdf
 INPUT /home/anshul/programming/AI1110/Assignment/solution/main.aux
 INPUT /home/anshul/programming/AI1110/Assignment/solution/main.out
 INPUT /home/anshul/programming/AI1110/Assignment/solution/main.out
@@ -365,5 +371,6 @@ INPUT /usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmr6.pfb
 INPUT /usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmr8.pfb
 INPUT /usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy10.pfb
 INPUT /usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy8.pfb
+INPUT /usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/symbols/msam10.pfb
 INPUT /usr/share/texlive/texmf-dist/fonts/type1/urw/times/utmb8a.pfb
 INPUT /usr/share/texlive/texmf-dist/fonts/type1/urw/times/utmr8a.pfb

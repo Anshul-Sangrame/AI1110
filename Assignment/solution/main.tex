@@ -59,6 +59,7 @@ columns=fullflexible
 \theoremstyle{remark}
 \newtheorem{rem}{Remark}
 \newcommand{\sgn}{\mathop{\textbf{sgn}}}
+\providecommand{\der}[1]{\mathrm{d} #1}
 \providecommand{\abs}[1]{\left\vert#1\right\vert}
 \providecommand{\res}[1]{\Res\displaylimits_{#1}} 
 \providecommand{\norm}[1]{\left\lVert#1\right\rVert}
@@ -468,5 +469,140 @@ Hence,
     1 - e^{-\frac{x}{2}}, & x\geq0
     \end{cases}
 \end{align}
+
+\section{Triangular Distribution}
+
+\textbf{4.1: }Generate 
+	\begin{align}
+		T = U_1+U_2
+	\end{align}
+	
+	\solution
+	
+Download the following files,
+\begin{lstlisting}
+wget https://github.com/Anshul-Sangrame/AI1110/blob/main/Assignment/solution/coeffs.h
+wget https://github.com/Anshul-Sangrame/AI1110/blob/main/Assignment/solution/4/4_1.c
+\end{lstlisting}
+
+Execute the above files using code,
+\begin{lstlisting}
+gcc 4_1.c -lm
+./a.out
+\end{lstlisting}
+
+\textbf{4.2: }Find the CDF of $T$.
+
+	\solution
+	
+Download the following files,
+\begin{lstlisting}
+wget https://github.com/Anshul-Sangrame/AI1110/blob/main/Assignment/solution/4/4_2.py
+\end{lstlisting}
+
+Execute the above files using code,
+\begin{lstlisting}
+python3 4_2.py
+\end{lstlisting}
+
+Plot \ref{fig:4.2} is obtained
+\begin{figure}[!ht]
+    \centering
+    \includegraphics[width=\columnwidth]{./figs/tri_cdf_empirical.pdf}
+    \caption{}
+    \label{fig:4.2}
+\end{figure}
+
+
+\textbf{4.3: }Find the PDF of $T$.
+
+	\solution
+	
+Download the following files,
+\begin{lstlisting}
+wget https://github.com/Anshul-Sangrame/AI1110/blob/main/Assignment/solution/4/4_3.py
+\end{lstlisting}
+
+Execute the above files using code,
+\begin{lstlisting}
+python3 4_3.py
+\end{lstlisting}
+
+Plot \ref{fig:4.3} is obtained
+\begin{figure}[!ht]
+    \centering
+    \includegraphics[width=\columnwidth]{./figs/tri_pdf_empirical.pdf}
+    \caption{}
+    \label{fig:4.3}
+\end{figure}
+
+\textbf{4.4: }Find the theoretical expressions for the PDF and CDF of $T$.
+
+	\solution
+	
+The CDF of $T$ is given by
+	\begin{align}
+		F_T(t) = \pr{T \le t} = \pr{U_1 + U_2 \le t}	
+	\end{align}		
+	Since $U_1, U_2 \in [0,1] \implies U_1 + U_2 \in [0,2]$
+	Therefore, if $t \ge 2$, then $U_1 + U_2 \le t$ is always true and if $t < 0$, then $U_1 + U_2 \le t$ is always false.
+	
+	Now, fix the value of $U_1$ to be some $x$
+	\begin{align}
+		x + U_2 \le t \implies U_2 \le t - x
+	\end{align}
+	
+	If $0 \le t \le 1$, then $x$ can take all values in $[0,t]$
+	\begin{align}
+		F_T(t)	&= \int_0^t \pr{U_2 \le t - x} p_{U_1}(x) \der{x} \\
+		&= \int_0^t F_{U_2}(t-x) p_{U_1}(x) \der{x}
+	\end{align}
+	\begin{align}
+		0 \le x \le t &\implies 0 \le t - x \le t \le 1 \\
+		&\implies F_{U_2}(t-x) = t - x
+	\end{align}
+	\begin{align}
+		F_T(t) &= \int_0^t (t-x) \cdot 1 \cdot \der{x} \\
+		&= \left. tx - \frac{x^2}{2} \right|_0^t \\
+		&= \frac{t^2}{2}
+	\end{align}
+	
+	If $1 < t < 2$, $x$ can only take values in $[0,1]$ as $U_1 \le 1$
+	\begin{align}
+		F_T(t)	&= \int_0^1 F_{U_2}(t-x) \cdot 1 \cdot \der{x} 
+	\end{align}
+	\begin{align}
+		0 \le x \le t - 1 &\implies 1 \le t - x \le t \\
+		t - 1 \le x \le 1 &\implies 0 < t - 1 \le t - x \le 1
+	\end{align}
+	\begin{align}
+		F_T(t) &= \int_0^{t-1} 1 \der{x} + \int_{t-1}^1 (t-x)\der{x} \\
+		&= t - 1 + t(1 - (t - 1)) - \frac{1}{2} + \frac{(t-1)^2}{2} \\
+		&= t - 1 + 2t - t^2 -\frac{1}{2} + \frac{t^2}{2} + \frac{1}{2} - t \\ 
+		&= -\frac{t^2}{2} + 2t - 1
+	\end{align}
+	
+	Therefore,
+	\begin{align}
+		F_T(t) = 
+		\begin{cases}
+		0 & t < 0 \\
+		\dfrac{t^2}{2} & 0 \le t \le 1 \\
+		 2t -\dfrac{t^2}{2} - 1 & 1 < t < 2 \\
+		1 & t \ge 2
+		\end{cases}
+	\end{align}
+	
+The PDF of $T$ is given by
+	\begin{align}
+		p_T(t) &= \frac{\der{}}{\der{t}} F_T(t) \\
+		\therefore p_T(t) &=
+		\begin{cases}
+			0 & t < 0 \\
+			t & 0 \le t \le 1 \\
+			2 - t & 1 < t < 2 \\
+			0 & t \ge 2
+		\end{cases}
+	\end{align}
 
 \end{document}

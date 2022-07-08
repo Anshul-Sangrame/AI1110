@@ -10,7 +10,7 @@ import matplotlib.pyplot as plt
 #end if
 
 
-maxrange=50
+maxrange=150
 maxlim=6.0
 x = np.linspace(-maxlim,maxlim,maxrange)#points on the x axis
 simlen = int(1e6) #number of samples
