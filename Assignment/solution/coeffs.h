@@ -10,6 +10,7 @@ double **matmul(double **a, double **b, int m, int n, int p);
 double **transpose(double **a,  int m, int n);
 void uniform(char *str, int len);
 void gaussian(char *str, int len);
+void triangular(char *str, int len);
 double mean(char *str);
 double var(char *str);
 void V_dist(char *str, int len);
@@ -296,3 +297,26 @@ fprintf(fp,"%lf\n",term);
 fclose(fp);
 	
 }
+
+//Defining the function for generating triangular random numbers
+void triangular(char *str, int len)
+{
+int i,j;
+double temp;
+FILE *fp;
+
+fp = fopen(str,"w");
+//Generate numbers
+for (i = 0; i < len; i++)
+{
+temp = 0;
+for (j = 0; j < 2; j++)
+{
+temp += (double)rand()/RAND_MAX;
+}
+fprintf(fp,"%lf\n",temp);
+}
+fclose(fp);
+
+}
+//End function for generating triangular random numbers

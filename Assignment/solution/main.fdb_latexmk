@@ -1,7 +1,7 @@
 # Fdb version 3
-["pdflatex"] 1656999772 "/home/anshul/programming/AI1110/Assignment/solution/main.tex" "/home/anshul/programming/AI1110/Assignment/solution/main.pdf" "main" 1656999777
+["pdflatex"] 1657096085 "/home/anshul/programming/AI1110/Assignment/solution/main.tex" "/home/anshul/programming/AI1110/Assignment/solution/main.pdf" "main" 1657096873
   "/etc/texmf/web2c/texmf.cnf" 1656871239 475 c0e671620eb5563b2130f56340a5fde8 ""
-  "/home/anshul/programming/AI1110/Assignment/solution/main.aux" 1656999777 1922 bb529f0456df8aa072002373e4f79596 ""
+  "/home/anshul/programming/AI1110/Assignment/solution/main.aux" 1657096086 1922 bb529f0456df8aa072002373e4f79596 ""
   "/home/anshul/programming/AI1110/Assignment/solution/main.tex" 1656999777 12871 02058e330ff3b445fc5bacc7815e3063 ""
   "/usr/share/texlive/texmf-dist/fonts/enc/dvips/base/8r.enc" 1165713224 4850 80dc9bab7f31fb78a000ccfed0e27cab ""
   "/usr/share/texlive/texmf-dist/fonts/map/fontname/texfonts.map" 1577235249 3524 cb3e574dea2d1052e39280babc910dc8 ""
@@ -198,15 +198,15 @@
   "/var/lib/texmf/web2c/pdftex/pdflatex.fmt" 1656993303 8258353 13331588bce84d6514fe3e6e7b08a987 ""
   "figs/V_cdf.pdf" 1656999729 10577 d962e0cce60363da11870554625becd6 ""
   "figs/gauss_cdf.pdf" 1656999772 10543 7494460f0834e0bd3a4f7452dce33652 ""
-  "figs/gauss_pdf.pdf" 1656997565 15108 42d77e14a9fe82577c154fb2a3960c9f ""
-  "figs/uni_cdf.pdf" 1656997391 10740 1017ad4a976a3fa9a8be11d82909abb5 ""
-  "main.aux" 1656999777 1922 bb529f0456df8aa072002373e4f79596 "pdflatex"
-  "main.out" 1656999777 169 2fc7dff98d8f3e81e82987a8ebcdbb28 "pdflatex"
+  "figs/gauss_pdf.pdf" 1657096085 15108 c862494b2b6d09ff4863f1404c0d09ed ""
+  "figs/uni_cdf.pdf" 1657087580 10740 97d3ff5e55106dcb7aa0b3cebe97c7cd ""
+  "main.aux" 1657096086 1922 bb529f0456df8aa072002373e4f79596 "pdflatex"
+  "main.out" 1657096086 169 2fc7dff98d8f3e81e82987a8ebcdbb28 "pdflatex"
   "main.tex" 1656999777 12871 02058e330ff3b445fc5bacc7815e3063 ""
   (generated)
-  "main.pdf"
   "/home/anshul/programming/AI1110/Assignment/solution/main.pdf"
   "/home/anshul/programming/AI1110/Assignment/solution/main.log"
-  "main.log"
   "main.aux"
+  "main.pdf"
+  "main.log"
   "main.out"
