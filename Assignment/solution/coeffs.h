@@ -10,10 +10,13 @@ double **matmul(double **a, double **b, int m, int n, int p);
 double **transpose(double **a,  int m, int n);
 void uniform(char *str, int len);
 void gaussian(char *str, int len);
+void bernoulli(char *str, int len);
+void bernoulli_gau(char *str,int len);
 void triangular(char *str, int len);
 double mean(char *str);
 double var(char *str);
 void V_dist(char *str, int len);
+double gau_rand();
 //End function declaration
 
 
@@ -321,3 +324,84 @@ fclose(fp);
 
 }
 //End function for generating triangular random numbers
+
+//Defining the function for generating one gaussian random numbers
+
+double gau_rand()
+{
+double temp;
+int j;
+
+//Generate numbers
+temp = 0.0;
+for (j = 0; j < 12; j++)
+{
+temp += (double)rand()/RAND_MAX;
+}
+temp-=6;
+
+return temp;
+}
+
+//End function for generating one gaussian random numbers
+
+//Defining the function for generating bernoulli random numbers
+
+void bernoulli(char *str, int len)
+{
+int i;
+double term;
+double U;
+FILE *fp;
+
+fp = fopen(str,"w");
+//Generate numbers
+for (i = 0; i < len; i++)
+{
+U = (double)rand()/RAND_MAX;
+
+if(U>0.5) {
+  term = 1;
+}
+else{
+  term = -1;
+}
+
+fprintf(fp,"%lf\n",term);
+}
+fclose(fp);
+}
+
+//End function for generating bernoulli random numbers
+
+//Defining the function for generating 5*bernoulli + gaussian random numbers
+
+void bernoulli_gau(char *str,int len)
+{
+int i;
+double ber;
+double term;
+double U;
+FILE *fp;
+
+fp = fopen(str,"w");
+//Generate numbers
+for (i = 0; i < len; i++)
+{
+U = (double)rand()/RAND_MAX;
+
+if(U>0.5) {
+  ber = 1;
+}
+else{
+  ber = -1;
+}
+
+term = 0.5*ber + gau_rand();
+
+fprintf(fp,"%lf\n",term);
+}
+fclose(fp);
+}
+
+//End function for generating 5*bernoulli + gaussian random numbers
