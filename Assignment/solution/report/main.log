@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.20 (TeX Live 2019/Debian) (preloaded format=pdflatex 2022.7.5)  10 JUL 2022 00:49
+This is pdfTeX, Version 3.14159265-2.6-1.40.20 (TeX Live 2019/Debian) (preloaded format=pdflatex 2022.7.5)  10 JUL 2022 03:13
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
@@ -1088,33 +1088,34 @@ File: ../figs/tri_cdf.pdf Graphic file (type pdf)
 Package pdftex.def Info: ../figs/tri_cdf.pdf  used on input line 743.
 (pdftex.def)             Requested size: 252.0pt x 189.00429pt.
  [6 <../figs/tri_pdf.pdf> <../figs/tri_cdf.pdf>]
-<../figs/5_2.pdf, id=482, 462.52798pt x 346.89601pt>
-File: ../figs/5_2.pdf Graphic file (type pdf)
-<use ../figs/5_2.pdf>
-Package pdftex.def Info: ../figs/5_2.pdf  used on input line 804.
+File: ../figs/uni_cdf.pdf Graphic file (type pdf)
+<use ../figs/uni_cdf.pdf>
+Package pdftex.def Info: ../figs/uni_cdf.pdf  used on input line 804.
 (pdftex.def)             Requested size: 252.0pt x 189.00429pt.
- [7 <../figs/5_2.pdf>]
-Package atveryend Info: Empty hook `BeforeClearDocument' on input line 848.
-Package atveryend Info: Empty hook `AfterLastShipout' on input line 848.
+ [7] [8
+
+]
+Package atveryend Info: Empty hook `BeforeClearDocument' on input line 883.
+Package atveryend Info: Empty hook `AfterLastShipout' on input line 883.
  (/home/anshul/programming/AI1110/Assignment/solution/report/main.aux)
-Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 848.
-Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 848.
+Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 883.
+Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 883.
 Package rerunfilecheck Info: File `main.out' has not changed.
 (rerunfilecheck)             Checksum: EF06C0969E6BEB01BAE0E96A951B7B79;280.
  ) 
 Here is how much of TeX's memory you used:
- 25979 strings out of 481239
- 495471 string characters out of 5920378
- 835007 words of memory out of 5000000
- 40496 multiletter control sequences out of 15000+600000
+ 25991 strings out of 481239
+ 495564 string characters out of 5920378
+ 835102 words of memory out of 5000000
+ 40493 multiletter control sequences out of 15000+600000
  592798 words of font info for 143 fonts, out of 8000000 for 9000
  1144 hyphenation exceptions out of 8191
  58i,16n,67p,849b,1899s stack positions out of 5000i,500n,10000p,200000b,80000s
 {/usr/share/texlive/texmf-dist/fonts/enc/dvips/base/8r.enc}</usr/share/texlive/texmf-dist/fonts/type1/public/txfonts/rtxmi.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/txfonts/rtxr.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/txfonts/rtxsc.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/txfonts/txex.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/txfonts/txsy.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/txfonts/txsya.pfb></usr/share/texlive/texmf-dist/fonts/type1/urw/times/utmb8a.pfb></usr/share/texlive/texmf-dist/fonts/type1/urw/times/utmr8a.pfb></usr/share/texlive/texmf-dist/fonts/type1/urw/times/utmri8a.pfb>
-Output written on /home/anshul/programming/AI1110/Assignment/solution/report/main.pdf (7 pages, 8532709 bytes).
+Output written on /home/anshul/programming/AI1110/Assignment/solution/report/main.pdf (8 pages, 148720 bytes).
 PDF statistics:
- 616 PDF objects out of 1000 (max. 8388607)
- 414 compressed objects within 5 object streams
- 208 named destinations out of 1000 (max. 500000)
- 98 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 617 PDF objects out of 1000 (max. 8388607)
+ 429 compressed objects within 5 object streams
+ 224 named destinations out of 1000 (max. 500000)
+ 93 words of extra memory for PDF output out of 10000 (max. 10000000)
 

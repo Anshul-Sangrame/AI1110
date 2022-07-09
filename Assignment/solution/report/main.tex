@@ -801,7 +801,7 @@ python3 5.3.py
 Plot \ref{fig:5.2} is obtained
 \begin{figure}[!ht]
     \centering
-    \includegraphics[width=\columnwidth]{../figs/5_2.pdf}
+    \includegraphics[width=\columnwidth]{../figs/uni_cdf.pdf}
     \caption{}
     \label{fig:5.2}
 \end{figure}
@@ -832,17 +832,52 @@ and
 
 Letting $X = 1$ and $X = -1$ respectively, we see the number of mismatched data points to compute the error probabilities. The simulation is coded in
 \begin{lstlisting}
-$ wget https://raw.githubusercontent.com/goats-9/ai1110-assignments/master/manual/codes/5_4.py
+$ wget https://github.com/Anshul-Sangrame/AI1110/blob/main/Assignment/solution/5/5.5.py
 \end{lstlisting}
 and can be run by typing
 \begin{lstlisting}
-$ python3 5_4.py
+$ python3 5.5.py
 \end{lstlisting}
 The results are
 		\begin{align}
 			P_{e|0} = 5.02 \times 10^{-4} \\
 			P_{e|1} = 5.24 \times 10^{-4}
 		\end{align}
+%
+\item Find $P_e$ assuming that $X$ has equiprobable symbols.
+
+\solution
+
+Here, $\pr{X = 1} = \pr{X = -1} = 0.5$. Thus,
+	\begin{align}
+		P_e &= \pr{X = 1}P_{e|1} + \pr{X = -1}P_{e|0} \label{eq:pe-gen} \\
+		&= \frac{1}{2}\brak{P_{e|0} + P_{e|1}} = 5.13 \times 10^{-4}
+	\end{align}
+%
+\item Verify by plotting the theoretical $P_e$ wrt $A$ from 0 dB to 10 dB.
+
+\solution
+
+\begin{align}
+	P_{e|0} &= \pr{\hat{X} = 1 | X = -1}\\
+	&= \pr{Y > 0 | X = -1} \\
+	&= \pr{AX + N > 0 | X = -1} \label{eq:thresh} \\
+	&= \pr{N > A} = \qfunc{A}
+\end{align}
+since $X$ and $N$ are independent. Writing a similar expression for $P_{e|1}$ and noting that 
+\begin{align}
+	\pr{N < -A} = \pr{N > A} = \qfunc{A}
+\end{align}
+it follows that $P_e = \qfunc{A}$. This is the idea used to plot the theoretical $P_e$. The plot is coded both in the rectangular axes and the semilog-y axes. Download the relevant codes using 
+\begin{lstlisting}
+wget https://github.com/Anshul-Sangrame/AI1110/blob/main/Assignment/solution/4/4_5_1.py
+wget https://github.com/Anshul-Sangrame/AI1110/blob/main/Assignment/solution/4/4_5_2.py
+\end{lstlisting}
+Execute the above files using code,
+\begin{lstlisting}
+python3 4_5_1.py
+python3 4_5_2.py
+\end{lstlisting}
 \end{enumerate}
 %
 \end{document}
