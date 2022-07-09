@@ -386,8 +386,10 @@ E\sbrak{U^2} &= \int_{-\infty}^{\infty} \frac{u^2}{\sqrt{2\pi}}\exp\brak{-\frac{
 
 Using integration by parts,
 \begin{align}
-E\sbrak{U^2} &= \frac{1}{\sqrt{2\pi}} \int_{-\infty}^{\infty} \exp\brak{-\frac{u^2}{2}}du \\
-E\sbrak{U^2} &= \frac{\sqrt{2\pi}}{\sqrt{2\pi}} = 1
+E\sbrak{U^2} &= -u\frac{1}{\sqrt{2\pi}}\exp{\brak{-\frac{u^2}{2}}}\Big|_{-\infty}^{\infty}  + \nonumber \\ 
+& \int_{-\infty}^{\infty} \frac{1}{\sqrt{2\pi}}\exp\brak{-\frac{u^2}{2}}  \\ 
+                &= 0 + \frac{1}{\sqrt{2\pi}}\sqrt{2\pi} \\
+                &= 1
 \end{align}
 
 Hence,

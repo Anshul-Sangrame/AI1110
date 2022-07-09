@@ -1,8 +1,8 @@
 # Fdb version 3
-["pdflatex"] 1657262499 "/home/anshul/programming/AI1110/Assignment/solution/main.tex" "/home/anshul/programming/AI1110/Assignment/solution/main.pdf" "main" 1657262500
+["pdflatex"] 1657268893 "/home/anshul/programming/AI1110/Assignment/solution/main.tex" "/home/anshul/programming/AI1110/Assignment/solution/main.pdf" "main" 1657268894
   "/etc/texmf/web2c/texmf.cnf" 1656871239 475 c0e671620eb5563b2130f56340a5fde8 ""
-  "/home/anshul/programming/AI1110/Assignment/solution/main.aux" 1657262500 2758 fc0043c758124d858f4455cdada9e1f6 ""
-  "/home/anshul/programming/AI1110/Assignment/solution/main.tex" 1657262499 17019 52949cb799d0bf8bbeab8a65ae402ea8 ""
+  "/home/anshul/programming/AI1110/Assignment/solution/main.aux" 1657268894 2758 0e9847dc0b3ba2a927dc94de5a49f659 ""
+  "/home/anshul/programming/AI1110/Assignment/solution/main.tex" 1657268893 17140 b7760c503085efadc6c619c38bb5963c ""
   "/usr/share/texlive/texmf-dist/fonts/enc/dvips/base/8r.enc" 1165713224 4850 80dc9bab7f31fb78a000ccfed0e27cab ""
   "/usr/share/texlive/texmf-dist/fonts/map/fontname/texfonts.map" 1577235249 3524 cb3e574dea2d1052e39280babc910dc8 ""
   "/usr/share/texlive/texmf-dist/fonts/tfm/adobe/times/ptmb7t.tfm" 1136768653 2172 fd0c924230362ff848a33632ed45dc23 ""
@@ -205,13 +205,13 @@
   "figs/tri_pdf.pdf" 1657262002 14234 811750b7cfb9044116c3baeecc5fe37e ""
   "figs/tri_pdf_empirical.pdf" 1657261982 13056 8b48af40c12f17507ba96216fe7f323c ""
   "figs/uni_cdf.pdf" 1657259764 10740 5b87b44a4fad6b13c8eb6c9a2fd01d4b ""
-  "main.aux" 1657262500 2758 fc0043c758124d858f4455cdada9e1f6 "pdflatex"
-  "main.out" 1657262500 227 039f53ea1cb179d021833f09b024b22a "pdflatex"
-  "main.tex" 1657262499 17019 52949cb799d0bf8bbeab8a65ae402ea8 ""
+  "main.aux" 1657268894 2758 0e9847dc0b3ba2a927dc94de5a49f659 "pdflatex"
+  "main.out" 1657268894 227 039f53ea1cb179d021833f09b024b22a "pdflatex"
+  "main.tex" 1657268893 17140 b7760c503085efadc6c619c38bb5963c ""
   (generated)
-  "main.pdf"
-  "/home/anshul/programming/AI1110/Assignment/solution/main.pdf"
   "main.aux"
-  "main.log"
   "main.out"
   "/home/anshul/programming/AI1110/Assignment/solution/main.log"
+  "main.pdf"
+  "/home/anshul/programming/AI1110/Assignment/solution/main.pdf"
+  "main.log"
