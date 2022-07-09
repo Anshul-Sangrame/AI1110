@@ -11,11 +11,8 @@ import scipy
 
 #end if
 
-
-
-
 simlen = int(1e6) #number of samples
-x = np.linspace(-4,4,simlen)#points on the x axis
+x = np.linspace(0,1,simlen)#points on the x axis
 #randvar = np.random.normal(0,1,simlen)
 sig = np.loadtxt('ber_gau.dat',dtype='double')
 #randvar = np.loadtxt('gau.dat',dtype='double')

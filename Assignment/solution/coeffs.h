@@ -378,10 +378,11 @@ fclose(fp);
 
 void bernoulli_gau(char *str,int len)
 {
-int i;
+int i,j;
 double ber;
 double term;
 double U;
+double temp;
 FILE *fp;
 
 fp = fopen(str,"w");
@@ -397,7 +398,14 @@ else{
   ber = -1;
 }
 
-term = 0.5*ber + gau_rand();
+temp = 0.0;
+for (j = 0; j < 12; j++)
+{
+temp += (double)rand()/RAND_MAX;
+}
+temp-=6;
+
+term = pow(10,0.5)*ber + temp;
 
 fprintf(fp,"%lf\n",term);
 }
