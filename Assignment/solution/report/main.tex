@@ -870,14 +870,57 @@ since $X$ and $N$ are independent. Writing a similar expression for $P_{e|1}$ an
 \end{align}
 it follows that $P_e = \qfunc{A}$. This is the idea used to plot the theoretical $P_e$. The plot is coded both in the rectangular axes and the semilog-y axes. Download the relevant codes using 
 \begin{lstlisting}
-wget https://github.com/Anshul-Sangrame/AI1110/blob/main/Assignment/solution/4/4_5_1.py
-wget https://github.com/Anshul-Sangrame/AI1110/blob/main/Assignment/solution/4/4_5_2.py
+wget https://github.com/Anshul-Sangrame/AI1110/blob/main/Assignment/solution/5/5.7.py
+wget https://github.com/Anshul-Sangrame/AI1110/blob/main/Assignment/solution/5/5.7_semilog.py
 \end{lstlisting}
 Execute the above files using code,
 \begin{lstlisting}
-python3 4_5_1.py
-python3 4_5_2.py
+python3 5.7.py
+python3 5.7_semilog.py
 \end{lstlisting}
+Plot \ref{fig:5.7} obtained in rectangular axis
+\begin{figure}[!ht]
+    \centering
+    \includegraphics[width=\columnwidth]{../figs/5_6.pdf}
+    \caption{}
+    \label{fig:5.7}
+\end{figure}
+
+Plot \ref{fig:5.7_semilog} obtained in semilog-y axis
+\begin{figure}[!ht]
+    \centering
+    \includegraphics[width=\columnwidth]{../figs/5_6_semilog.pdf}
+    \caption{}
+    \label{fig:5.7_semilog}
+\end{figure}
+%
+\item Now, consider a threshold $\delta$ while estimating $X$ from $Y$. Find the value of $\delta$ that maximizes the theoretical $P_e$.
+
+\solution
+
+To estimate $X$ from $Y$, we now consider the following:
+\begin{align}
+    X = 
+    \begin{cases}
+        1, & Y > \delta \\
+        -1, & Y < \delta
+    \end{cases}
+\end{align}
+Therefore,
+\begin{align}
+	P_e &= \pr{X = -1}\qfunc{A + \delta} \nonumber \\ 
+	&+ \pr{X = 1}\qfunc{A - \delta} \label{eq:delta-gen} \\
+	&= \frac{1}{2}\brak{\qfunc{A + \delta} + \qfunc{A - \delta}} 
+	\label{eq:func-delta}
+\end{align}
+To minimise $P_e$, we differentiate the above equation wrt $\delta$:
+\begin{align}
+0 &= \frac{d}{d\delta} \left(\frac{1}{2}(Q_N(A - \delta) + Q_N(A + \delta))\right) \\
+&= \frac{1}{2} (\frac{1}{\sqrt{2\pi}} e^{-\frac{(\delta - A)^2}{2}} - \frac{1}{\sqrt{2\pi}} e^{-\frac{(A + \delta)^2}{2}} ) \\
+\intertext{Therefore,}
+(\delta - A)^2 &= (\delta + A)^2 \\
+\implies \delta &= 0
+\end{align}
 \end{enumerate}
 %
 \end{document}
