@@ -1109,33 +1109,50 @@ From equation \eqref{eq:chi-cdf},
 
 Download the following files to verify the plot,
 \begin{lstlisting}
-wget https://github.com/Anshul-Sangrame/AI1110/blob/main/Assignment/solution/6/6.1.c
+wget https://github.com/Anshul-Sangrame/AI1110/blob/main/Assignment/solution/6/6.3.c
 wget https://github.com/Anshul-Sangrame/AI1110/blob/main/Assignment/solution/coeffs.h
-wget https://github.com/Anshul-Sangrame/AI1110/blob/main/Assignment/solution/6/6.1.cdf.py
-wget https://github.com/Anshul-Sangrame/AI1110/blob/main/Assignment/solution/6/6.1.pdf.py
+wget https://github.com/Anshul-Sangrame/AI1110/blob/main/Assignment/solution/6/6.3.cdf.py
+wget https://github.com/Anshul-Sangrame/AI1110/blob/main/Assignment/solution/6/6.3.pdf.py
 \end{lstlisting}
 Execute the programs using the code in terminal,
 \begin{lstlisting}
-gcc 6.1.c -lm
+gcc 6.3.c -lm
 ./a.out
-python3 6.1.cdf.py
-python3 6.1.pdf.py
+python3 6.3.cdf.py
+python3 6.3.pdf.py
 \end{lstlisting}
-Plot \ref{fig:6.1.cdf} is CDF
+Plot \ref{fig:6.3.cdf} is CDF
 \begin{figure}[!ht]
     \centering
-    \includegraphics[width=\columnwidth]{../figs/chi_cdf.pdf}
+    \includegraphics[width=\columnwidth]{../figs/ral_cdf.pdf}
     \caption{}
-    \label{fig:6.1.cdf}
+    \label{fig:6.3.cdf}
 \end{figure}
 
-Plot \ref{fig:6.1.pdf} is PDF
+Plot \ref{fig:6.3.pdf} is PDF
 \begin{figure}[!ht]
     \centering
-    \includegraphics[width=\columnwidth]{../figs/chi_pdf.pdf}
+    \includegraphics[width=\columnwidth]{../figs/ral_pdf.pdf}
     \caption{}
-    \label{fig:6.1.pdf}
+    \label{fig:6.3.pdf}
 \end{figure}
+%
+\end{enumerate}
+%
+%
+\section{Conditional Probability}
+\begin{enumerate}[label=\thesection.\arabic*
+	,ref=\thesection.\theenumi]
+%
+\item Plot 
+\begin{align}
+	P_e = \pr{\hat{X} = -1|X = 1}
+\end{align}
+for 
+\begin{align}
+	Y = AX + N
+\end{align}
+where $A$ is Rayleigh with $E\sbrak{A^2} = \gamma,\ N \sim \gauss{0}{1},\ X \in \cbrak{1, -1}$ for $0 \leq \gamma \leq 10 \text{ dB}$.
 %
 \end{enumerate}
 %

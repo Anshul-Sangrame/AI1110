@@ -4,3 +4,4 @@
 \contentsline {section}{\numberline {4}Triangular Distribution}{4}{section.4}%
 \contentsline {section}{\numberline {5}Maximum Likelihood}{6}{section.5}%
 \contentsline {section}{\numberline {6}Gaussian to Other}{9}{section.6}%
+\contentsline {section}{\numberline {7}Conditional Probability}{11}{section.7}%

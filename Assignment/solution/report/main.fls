@@ -489,10 +489,12 @@ INPUT ../figs/chi_cdf.pdf
 INPUT /home/anshul/programming/AI1110/Assignment/solution/report/../figs/chi_pdf.pdf
 INPUT ../figs/chi_pdf.pdf
 INPUT ../figs/chi_pdf.pdf
-INPUT /home/anshul/programming/AI1110/Assignment/solution/report/../figs/chi_cdf.pdf
-INPUT ../figs/chi_cdf.pdf
-INPUT /home/anshul/programming/AI1110/Assignment/solution/report/../figs/chi_pdf.pdf
-INPUT ../figs/chi_pdf.pdf
+INPUT /home/anshul/programming/AI1110/Assignment/solution/report/../figs/ral_cdf.pdf
+INPUT ../figs/ral_cdf.pdf
+INPUT ../figs/ral_cdf.pdf
+INPUT /home/anshul/programming/AI1110/Assignment/solution/report/../figs/ral_pdf.pdf
+INPUT ../figs/ral_pdf.pdf
+INPUT ../figs/ral_pdf.pdf
 INPUT /home/anshul/programming/AI1110/Assignment/solution/report/main.aux
 INPUT /home/anshul/programming/AI1110/Assignment/solution/report/main.out
 INPUT /home/anshul/programming/AI1110/Assignment/solution/report/main.out

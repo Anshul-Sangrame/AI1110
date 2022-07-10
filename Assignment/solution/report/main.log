@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.20 (TeX Live 2019/Debian) (preloaded format=pdflatex 2022.7.5)  10 JUL 2022 21:54
+This is pdfTeX, Version 3.14159265-2.6-1.40.20 (TeX Live 2019/Debian) (preloaded format=pdflatex 2022.7.5)  10 JUL 2022 22:27
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
@@ -862,14 +862,7 @@ Package: lscape 2000/10/22 v3.01 Landscape Pages (DPC)
 File: l3backend-pdfmode.def 2020-02-03 L3 backend support: PDF mode
 \l__kernel_color_stack_int=\count330
 \l__pdf_internal_box=\box135
-) (/home/anshul/programming/AI1110/Assignment/solution/report/main.aux
-
-LaTeX Warning: Label `fig:6.1.cdf' multiply defined.
-
-
-LaTeX Warning: Label `fig:6.1.pdf' multiply defined.
-
-)
+) (/home/anshul/programming/AI1110/Assignment/solution/report/main.aux)
 \openout1 = `main.aux'.
 
 LaTeX Font Info:    Checking defaults for OML/txmi/m/it on input line 120.
@@ -898,7 +891,8 @@ File: omxtxex.fd 2000/12/15 v3.1
 LaTeX Font Info:    ... okay on input line 120.
 LaTeX Font Info:    Checking defaults for U/txexa/m/n on input line 120.
 LaTeX Font Info:    Trying to load font information for U+txexa on input line 120.
- (/usr/share/texlive/texmf-dist/tex/latex/txfonts/utxexa.fd
+
+(/usr/share/texlive/texmf-dist/tex/latex/txfonts/utxexa.fd
 File: utxexa.fd 2000/12/15 v3.1
 )
 LaTeX Font Info:    ... okay on input line 120.
@@ -1034,7 +1028,7 @@ LaTeX Font Info:    Trying to load font information for U+txsyc on input line 23
  (/usr/share/texlive/texmf-dist/tex/latex/txfonts/utxsyc.fd
 File: utxsyc.fd 2000/12/15 v3.1
 )
-<../figs/uni_cdf.pdf, id=38, 462.52798pt x 346.89601pt>
+<../figs/uni_cdf.pdf, id=43, 462.52798pt x 346.89601pt>
 File: ../figs/uni_cdf.pdf Graphic file (type pdf)
 <use ../figs/uni_cdf.pdf>
 Package pdftex.def Info: ../figs/uni_cdf.pdf  used on input line 269.
@@ -1046,12 +1040,12 @@ Package pdftex.def Info: ../figs/uni_cdf.pdf  used on input line 269.
 Underfull \vbox (badness 2165) has occurred while \output is active []
 
  [2]
-<../figs/gauss_cdf.pdf, id=135, 462.52798pt x 346.89601pt>
+<../figs/gauss_cdf.pdf, id=140, 462.52798pt x 346.89601pt>
 File: ../figs/gauss_cdf.pdf Graphic file (type pdf)
 <use ../figs/gauss_cdf.pdf>
 Package pdftex.def Info: ../figs/gauss_cdf.pdf  used on input line 431.
 (pdftex.def)             Requested size: 252.0pt x 189.00429pt.
-<../figs/gauss_pdf.pdf, id=137, 462.52798pt x 346.89601pt>
+<../figs/gauss_pdf.pdf, id=142, 462.52798pt x 346.89601pt>
 File: ../figs/gauss_pdf.pdf Graphic file (type pdf)
 <use ../figs/gauss_pdf.pdf>
 Package pdftex.def Info: ../figs/gauss_pdf.pdf  used on input line 457.
@@ -1060,29 +1054,29 @@ Package pdftex.def Info: ../figs/gauss_pdf.pdf  used on input line 457.
 Underfull \vbox (badness 1137) has occurred while \output is active []
 
  [3 <../figs/gauss_cdf.pdf> <../figs/gauss_pdf.pdf>]
-<../figs/V_cdf.pdf, id=235, 462.52798pt x 346.89601pt>
+<../figs/V_cdf.pdf, id=240, 462.52798pt x 346.89601pt>
 File: ../figs/V_cdf.pdf Graphic file (type pdf)
 <use ../figs/V_cdf.pdf>
 Package pdftex.def Info: ../figs/V_cdf.pdf  used on input line 545.
 (pdftex.def)             Requested size: 252.0pt x 189.00429pt.
  [4 <../figs/V_cdf.pdf>]
-<../figs/tri_cdf_empirical.pdf, id=300, 462.52798pt x 346.89601pt>
+<../figs/tri_cdf_empirical.pdf, id=305, 462.52798pt x 346.89601pt>
 File: ../figs/tri_cdf_empirical.pdf Graphic file (type pdf)
 <use ../figs/tri_cdf_empirical.pdf>
 Package pdftex.def Info: ../figs/tri_cdf_empirical.pdf  used on input line 625.
 (pdftex.def)             Requested size: 252.0pt x 189.00429pt.
-<../figs/tri_pdf_empirical.pdf, id=302, 462.52798pt x 346.89601pt>
+<../figs/tri_pdf_empirical.pdf, id=307, 462.52798pt x 346.89601pt>
 File: ../figs/tri_pdf_empirical.pdf Graphic file (type pdf)
 <use ../figs/tri_pdf_empirical.pdf>
 Package pdftex.def Info: ../figs/tri_pdf_empirical.pdf  used on input line 645.
 (pdftex.def)             Requested size: 252.0pt x 189.00429pt.
  [5 <../figs/tri_cdf_empirical.pdf> <../figs/tri_pdf_empirical.pdf>]
-<../figs/tri_pdf.pdf, id=394, 462.52798pt x 346.89601pt>
+<../figs/tri_pdf.pdf, id=399, 462.52798pt x 346.89601pt>
 File: ../figs/tri_pdf.pdf Graphic file (type pdf)
 <use ../figs/tri_pdf.pdf>
 Package pdftex.def Info: ../figs/tri_pdf.pdf  used on input line 736.
 (pdftex.def)             Requested size: 252.0pt x 189.00429pt.
-<../figs/tri_cdf.pdf, id=396, 462.52798pt x 346.89601pt>
+<../figs/tri_cdf.pdf, id=401, 462.52798pt x 346.89601pt>
 File: ../figs/tri_cdf.pdf Graphic file (type pdf)
 <use ../figs/tri_cdf.pdf>
 Package pdftex.def Info: ../figs/tri_cdf.pdf  used on input line 743.
@@ -1093,12 +1087,12 @@ File: ../figs/uni_cdf.pdf Graphic file (type pdf)
 Package pdftex.def Info: ../figs/uni_cdf.pdf  used on input line 804.
 (pdftex.def)             Requested size: 252.0pt x 189.00429pt.
  [7]
-<../figs/5_6.pdf, id=530, 462.52798pt x 346.89601pt>
+<../figs/5_6.pdf, id=535, 462.52798pt x 346.89601pt>
 File: ../figs/5_6.pdf Graphic file (type pdf)
 <use ../figs/5_6.pdf>
 Package pdftex.def Info: ../figs/5_6.pdf  used on input line 884.
 (pdftex.def)             Requested size: 252.0pt x 189.00429pt.
-<../figs/5_6_semilog.pdf, id=532, 462.52798pt x 346.89601pt>
+<../figs/5_6_semilog.pdf, id=537, 462.52798pt x 346.89601pt>
 File: ../figs/5_6_semilog.pdf Graphic file (type pdf)
 <use ../figs/5_6_semilog.pdf>
 Package pdftex.def Info: ../figs/5_6_semilog.pdf  used on input line 892.
@@ -1113,12 +1107,12 @@ Underfull \vbox (badness 10000) has occurred while \output is active []
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
  [9]
-<../figs/chi_cdf.pdf, id=670, 462.52798pt x 346.89601pt>
+<../figs/chi_cdf.pdf, id=675, 462.52798pt x 346.89601pt>
 File: ../figs/chi_cdf.pdf Graphic file (type pdf)
 <use ../figs/chi_cdf.pdf>
 Package pdftex.def Info: ../figs/chi_cdf.pdf  used on input line 1056.
 (pdftex.def)             Requested size: 252.0pt x 189.00429pt.
-<../figs/chi_pdf.pdf, id=672, 462.52798pt x 346.89601pt>
+<../figs/chi_pdf.pdf, id=677, 462.52798pt x 346.89601pt>
 File: ../figs/chi_pdf.pdf Graphic file (type pdf)
 <use ../figs/chi_pdf.pdf>
 Package pdftex.def Info: ../figs/chi_pdf.pdf  used on input line 1064.
@@ -1127,40 +1121,38 @@ Package pdftex.def Info: ../figs/chi_pdf.pdf  used on input line 1064.
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
  [10 <../figs/chi_cdf.pdf> <../figs/chi_pdf.pdf>]
-File: ../figs/chi_cdf.pdf Graphic file (type pdf)
-<use ../figs/chi_cdf.pdf>
-Package pdftex.def Info: ../figs/chi_cdf.pdf  used on input line 1127.
+<../figs/ral_cdf.pdf, id=785, 462.52798pt x 346.89601pt>
+File: ../figs/ral_cdf.pdf Graphic file (type pdf)
+<use ../figs/ral_cdf.pdf>
+Package pdftex.def Info: ../figs/ral_cdf.pdf  used on input line 1127.
 (pdftex.def)             Requested size: 252.0pt x 189.00429pt.
-File: ../figs/chi_pdf.pdf Graphic file (type pdf)
-<use ../figs/chi_pdf.pdf>
-Package pdftex.def Info: ../figs/chi_pdf.pdf  used on input line 1135.
+<../figs/ral_pdf.pdf, id=787, 462.52798pt x 346.89601pt>
+File: ../figs/ral_pdf.pdf Graphic file (type pdf)
+<use ../figs/ral_pdf.pdf>
+Package pdftex.def Info: ../figs/ral_pdf.pdf  used on input line 1135.
 (pdftex.def)             Requested size: 252.0pt x 189.00429pt.
- [11]
-Package atveryend Info: Empty hook `BeforeClearDocument' on input line 1142.
-Package atveryend Info: Empty hook `AfterLastShipout' on input line 1142.
+ [11 <../figs/ral_cdf.pdf> <../figs/ral_pdf.pdf>]
+Package atveryend Info: Empty hook `BeforeClearDocument' on input line 1159.
+Package atveryend Info: Empty hook `AfterLastShipout' on input line 1159.
  (/home/anshul/programming/AI1110/Assignment/solution/report/main.aux)
-Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 1142.
-Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 1142.
+Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 1159.
+Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 1159.
 Package rerunfilecheck Info: File `main.out' has not changed.
-(rerunfilecheck)             Checksum: CB6C8D04B8F2D7A695DDCB7FEED82533;332.
-
-
-LaTeX Warning: There were multiply-defined labels.
-
+(rerunfilecheck)             Checksum: 19A11EF976FC8B136F15281E8E0069E5;390.
  ) 
 Here is how much of TeX's memory you used:
- 26119 strings out of 481239
- 497502 string characters out of 5920378
- 837753 words of memory out of 5000000
- 40528 multiletter control sequences out of 15000+600000
+ 26138 strings out of 481239
+ 497877 string characters out of 5920378
+ 837784 words of memory out of 5000000
+ 40541 multiletter control sequences out of 15000+600000
  592798 words of font info for 143 fonts, out of 8000000 for 9000
  1144 hyphenation exceptions out of 8191
  58i,16n,67p,849b,1870s stack positions out of 5000i,500n,10000p,200000b,80000s
 {/usr/share/texlive/texmf-dist/fonts/enc/dvips/base/8r.enc}</usr/share/texlive/texmf-dist/fonts/type1/public/txfonts/rtxmi.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/txfonts/rtxr.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/txfonts/rtxsc.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/txfonts/txex.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/txfonts/txsy.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/txfonts/txsya.pfb></usr/share/texlive/texmf-dist/fonts/type1/urw/times/utmb8a.pfb></usr/share/texlive/texmf-dist/fonts/type1/urw/times/utmr8a.pfb></usr/share/texlive/texmf-dist/fonts/type1/urw/times/utmri8a.pfb>
-Output written on /home/anshul/programming/AI1110/Assignment/solution/report/main.pdf (11 pages, 206941 bytes).
+Output written on /home/anshul/programming/AI1110/Assignment/solution/report/main.pdf (11 pages, 229468 bytes).
 PDF statistics:
- 899 PDF objects out of 1000 (max. 8388607)
- 591 compressed objects within 6 object streams
- 313 named destinations out of 1000 (max. 500000)
- 121 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 984 PDF objects out of 1000 (max. 8388607)
+ 617 compressed objects within 7 object streams
+ 317 named destinations out of 1000 (max. 500000)
+ 139 words of extra memory for PDF output out of 10000 (max. 10000000)
 

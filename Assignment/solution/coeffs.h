@@ -14,6 +14,7 @@ void bernoulli(char *str, int len);
 void bernoulli_gau(char *str,int len);
 void chi(char *str,int len);
 void ral(char *str,int len);
+void ral_gamma(char *str,double gamma,int len);
 void triangular(char *str, int len);
 double mean(char *str);
 double var(char *str);
@@ -446,7 +447,7 @@ fclose(fp);
 
 //End function for generating chi-squared (2 degrees of freedom) random numbers
 
-//Defining the function for generating rayleigh random numbers
+//Defining the function for generating rayleigh random numbers for gamma = 2
 
 void ral(char *str,int len)
 {
@@ -474,4 +475,38 @@ fprintf(fp,"%lf\n",term);
 fclose(fp);
 }
 
-//End function for generating rayleigh random numbers
+//End function for generating rayleigh random numbers for gamma = 2
+
+//Defining the function for generating rayleigh random numbers for any gamma
+
+void ral_gamma(char *str,double gamma,int len)
+{
+int i,j;
+double temp1,temp2;
+double term;
+double sig = sqrt(gamma/2.0);
+FILE *fp;
+
+fp = fopen(str,"w");
+//Generate numbers
+for (i = 0; i < len; i++)
+{
+temp1 = 0;
+temp2 = 0;
+for (j = 0; j < 12; j++)
+{
+temp1 += (double)rand()/RAND_MAX;
+temp2 += (double)rand()/RAND_MAX;
+}
+temp1 -= 6;
+temp2 -= 6;
+
+temp1*=sig;
+temp2*=sig;
+term = sqrt(temp1*temp1 + temp2*temp2);
+fprintf(fp,"%lf\n",term);
+}
+fclose(fp);
+}
+
+//End function for generating rayleigh random numbers for any gamma
