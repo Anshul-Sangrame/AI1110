@@ -926,6 +926,63 @@ To minimise $P_e$, we differentiate the above equation wrt $\delta$:
 \begin{align*}
 	p_x(0) = p
 \end{align*}
+
+\solution
+
+\begin{align}
+    P_e &= P_{e|0} p+ P_{e|1} (1-p) \\
+    &= p Q_N(A - \delta) + (1-p)Q_N(A + \delta)
+\intertext{Differentiating as before, we get:}
+0 &= p \frac{1}{\sqrt{2\pi}} e^{-\frac{(\delta - A)^2}{2}} - (1-p)\frac{1}{\sqrt{2\pi}} e^{-\frac{(A + \delta)^2}{2}} 
+\end{align}
+ Taking $\ln$ on both sides we have:
+ \begin{align}
+    \ln{p} - \frac{(\delta - A)^2}{2} &= \ln{1-p} - \frac{(\delta + A)^2}{2} \\
+	\implies 2\delta A &= \ln{\frac{1-p}{p}} \\
+    \implies \delta &= \frac{1}{2A} \ln{\frac{1-p}{p}}
+ \end{align}
+ %
+\item Repeat the above exercise using the MAP criterion.
+
+\solution
+
+Using theorem of conditional probabilities,
+\begin{align}
+    p_{X|Y}(x|y) &= \frac{p_{Y|X}(y|x) \times p_X(x)}{p_Y(y)} \\
+	p_{X|Y}(x|y) &= \frac{p_X(x)Pr(Ax + N = y)}{p_Y(y)} \\
+	p_{X|Y}(x|y) &= \frac{p_X(x)Pr(N = y - Ax)}{p_Y(y)} \\
+	p_{X|Y}(x|y) &= \frac{p_X(x)p_N(y - Ax)}{p_Y(y)} \\
+	p_{X|Y}(x|y) &= \frac{\frac{1}{\sqrt{2\pi}}p_X(x)e^{-\frac{(y-Ax)^2}{2}}}{p_Y(y)} \\
+\end{align}
+
+When $X=1$, we have:
+\begin{align}
+    p_{X|Y}(1|y) &= \frac{p_{Y|X}(y|1) \times p_X(1)}{p_Y(y)} \\
+    &= \frac{\left(1-p\right) \frac{e^{-\frac{(y-A)^2}{2}}}{\sqrt{2\pi}}}{ p \frac{e^{-\frac{(y+A)^2}{2}}}{\sqrt{2\pi}} + \left(1-p\right) \frac{e^{-\frac{(y-A)^2}{2}}}{\sqrt{2\pi}}} \\
+    &= \frac{\left(1-p\right) e^{2yA}}{p + \left(1-p\right) e^{2yA}}
+\end{align}
+
+Similarly when $X=-1$,
+\begin{align}
+	p_{X|Y}(-1|y) &= \frac{p}{p + (1-p)e^{2yA}}
+\end{align}
+
+Therefore, when $ p_{X|Y}(1|y) >  p_{X|Y}(-1|y)$, we have:
+\begin{align}
+    \frac{\left(1-p\right) e^{2yA}}{p + \left(1-p\right) e^{2yA}} &> \frac{p}{p + \left(1-p\right) e^{2yA}} \\
+    e^{2yA} &> \frac{p}{\left(1-p\right)} \\
+    \label{eq:y-condition}
+    y &> \frac{1}{2A} \ln{\frac{p}{\left(1-p\right)}}
+\end{align}
+Therefore, when Eq. \eqref{eq:y-condition}, we can assert that $X = 1$, and $X = -1$ otherwise.
+\end{enumerate}
+%
+%
+\section{Gaussian to Other}
+%
+\begin{enumerate}[label=\thesection.\arabic*,ref=\thesection.\theenumi]
+%
+\item gaytam singh
 \end{enumerate}
 %
 \end{document}

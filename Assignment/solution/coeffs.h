@@ -12,6 +12,7 @@ void uniform(char *str, int len);
 void gaussian(char *str, int len);
 void bernoulli(char *str, int len);
 void bernoulli_gau(char *str,int len);
+void chi(char *str,int len);
 void triangular(char *str, int len);
 double mean(char *str);
 double var(char *str);
@@ -413,3 +414,33 @@ fclose(fp);
 }
 
 //End function for generating 5*bernoulli + gaussian random numbers
+
+//Defining the function for generating chi-squared (2 degrees of freedom) random numbers
+
+void chi(char *str,int len)
+{
+int i,j;
+double temp1,temp2;
+double term;
+FILE *fp;
+
+fp = fopen(str,"w");
+//Generate numbers
+for (i = 0; i < len; i++)
+{
+temp1 = 0;
+temp2 = 0;
+for (j = 0; j < 12; j++)
+{
+temp1 += (double)rand()/RAND_MAX;
+temp2 += (double)rand()/RAND_MAX;
+}
+temp1 -= 6;
+temp2 -= 6;
+term = temp1*temp1 + temp2*temp2;
+fprintf(fp,"%lf\n",term);
+}
+fclose(fp);
+}
+
+//End function for generating chi-squared (2 degrees of freedom) random numbers
