@@ -832,11 +832,11 @@ and
 
 Letting $X = 1$ and $X = -1$ respectively, we see the number of mismatched data points to compute the error probabilities. The simulation is coded in
 \begin{lstlisting}
-$ wget https://github.com/Anshul-Sangrame/AI1110/blob/main/Assignment/solution/5/5.5.py
+wget https://github.com/Anshul-Sangrame/AI1110/blob/main/Assignment/solution/5/5.5.py
 \end{lstlisting}
 and can be run by typing
 \begin{lstlisting}
-$ python3 5.5.py
+python3 5.5.py
 \end{lstlisting}
 The results are
 		\begin{align}
@@ -982,7 +982,90 @@ Therefore, when Eq. \eqref{eq:y-condition}, we can assert that $X = 1$, and $X =
 %
 \begin{enumerate}[label=\thesection.\arabic*,ref=\thesection.\theenumi]
 %
-\item gaytam singh
+\item Let $X_1 \sim  \gauss{0}{1}$ and $X_2 \sim  \gauss{0}{1}$. Plot the CDF and PDF of
+%
+\begin{equation}
+V = X_1^2 + X_2^2
+\end{equation}
+
+\solution
+
+Applying following transformation on $X_1$ and $X_2$,
+\begin{align}
+	X_1 = R\cos{\Theta} \\
+	X_2 = R\sin{\Theta}
+\end{align}
+Where $R \in [0, \infty), \Theta \in [0, 2\pi)$. The Jacobian Matrix for this transformation is given by
+		\begin{align}
+			\mtx{J} &= \myvec{\pd{X_1}{R} & \pd{X_2}{R} \\
+							 \pd{X_1}{\Theta} & \pd{X_2}{\Theta}} \\
+					&= \myvec{\cos{\Theta} & \sin{\Theta} \\
+							  -R\sin{\Theta} & R\cos{\Theta}} \\
+			\implies |\mtx{J}| &= R
+			\label{eq:Jacobian}
+		\end{align}
+We also know that
+		\begin{align}
+			|\mtx{J}|p_{X_1, X_2}(x_1, x_2) &= p_{R, \Theta}(r, \theta) \\
+			\implies p_{R, \Theta}(r, \theta) &= Rp_{X_1}(x_1)p_{X_2}(x_2) \label{eq:iid-split} \\
+			&= \frac{R}{2\pi}\exp{\brak{-\frac{X_1^2 + X_2^2}{2}}} \\
+			&= \frac{R}{2\pi}\exp{\brak{-\frac{R^2}{2}}}
+			\label{eq:joint}
+		\end{align}
+Where \eqref{eq:iid-split} follows as $X_1, X_2$ are iid random variables. Thus,
+		\begin{align}
+			p_R(r) &= \int_{0}^{2\pi}p_{R, \Theta}(r, \theta)d\theta \\
+			&= R\exp{\brak{-\frac{R^2}{2}}}
+		\end{align}
+However, $V = X_1^2 + X_2^2 = R^2 \geq 0$, thus $F_V(x) = 0$. For $x < 0$,
+		\begin{align}
+			F_V(x) &= F_R(\sqrt{x}) \\ 
+			&= \int_{0}^{\sqrt{x}}r\exp{\brak{-\frac{r^2}{2}}}dr \\
+			&= \int_{0}^{\frac{x}{2}}e^{-t}dt = 1 - e^{-\frac{x}{2}}
+		\end{align}
+Where $t = \frac{r^2}{2}$ for $x \geq 0$, thus
+		\begin{align}
+			F_V(x) &= 
+			\begin{cases}
+				1 - e^{-\frac{x}{2}} & x \geq 0 \\
+				0 & x < 0 
+			\end{cases} \label{eq:chi-cdf} \\
+			p_V(x) & = \frac{d F_V(x)}{dx}\\
+			&= \begin{cases}
+				0, & x < 0 \\
+				\frac{1}{2}e^{-\frac{x}{2}}, & x \geq 0 \\
+			\end{cases} \label{eq:chi-pdf}
+		\end{align}
+Download the following files to verify the plot,
+\begin{lstlisting}
+wget https://github.com/Anshul-Sangrame/AI1110/blob/main/Assignment/solution/6/6.1.c
+wget https://github.com/Anshul-Sangrame/AI1110/blob/main/Assignment/solution/coeffs.h
+wget https://github.com/Anshul-Sangrame/AI1110/blob/main/Assignment/solution/6/6.1.cdf.py
+wget https://github.com/Anshul-Sangrame/AI1110/blob/main/Assignment/solution/6/6.1.pdf.py
+\end{lstlisting}
+Execute the programs using the code in terminal,
+\begin{lstlisting}
+gcc 6.1.c -lm
+./a.out
+python3 6.1.cdf.py
+python3 6.1.pdf.py
+\end{lstlisting}
+Plot \ref{fig:6.1.cdf} is CDF
+\begin{figure}[!ht]
+    \centering
+    \includegraphics[width=\columnwidth]{../figs/chi_cdf.pdf}
+    \caption{}
+    \label{fig:6.1.cdf}
+\end{figure}
+
+Plot \ref{fig:6.1.pdf} is PDF
+\begin{figure}[!ht]
+    \centering
+    \includegraphics[width=\columnwidth]{../figs/chi_pdf.pdf}
+    \caption{}
+    \label{fig:6.1.pdf}
+\end{figure}
+%
 \end{enumerate}
 %
 \end{document}

@@ -37,6 +37,7 @@ plt.plot(x,vect(x))
 plt.grid() #creating the grid
 plt.xlabel('$x$')
 plt.ylabel('$F_V(x)$')
+plt.legend(["Numerical","Theory"])
 
 #if using termux
 plt.savefig('../figs/chi_cdf.pdf')
