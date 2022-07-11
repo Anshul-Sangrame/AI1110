@@ -801,7 +801,7 @@ python3 5.3.py
 Plot \ref{fig:5.2} is obtained
 \begin{figure}[!ht]
     \centering
-    \includegraphics[width=\columnwidth]{../figs/uni_cdf.pdf}
+    \includegraphics[width=\columnwidth]{../figs/5_2.png}
     \caption{}
     \label{fig:5.2}
 \end{figure}
@@ -1156,6 +1156,33 @@ where $A$ is Rayleigh with $E\sbrak{A^2} = \gamma,\ N \sim \gauss{0}{1},\ X \in 
 
 \solution
 
+Download the following files to plot the graph,
+\begin{lstlisting}
+wget https://github.com/Anshul-Sangrame/AI1110/blob/main/Assignment/solution/7/7.1.ral_dist.c
+wget https://github.com/Anshul-Sangrame/AI1110/blob/main/Assignment/solution/coeffs.h
+wget https://github.com/Anshul-Sangrame/AI1110/blob/main/Assignment/solution/7/7.1.py
+\end{lstlisting}
+Execute the programs using the code in terminal,
+\begin{lstlisting}
+gcc 7.1.ral_dist.c -lm
+./a.out
+python3 7.1.py
+\end{lstlisting}
+Plot \ref{fig:7.1} obtained is on rectangular axis
+\begin{figure}[!ht]
+    \centering
+    \includegraphics[width=\columnwidth]{../figs/7_1.pdf}
+    \caption{}
+    \label{fig:7.1}
+\end{figure}
+
+Plot \ref{fig:7.1_semilog} obtained is on semilog axis
+\begin{figure}[!ht]
+    \centering
+    \includegraphics[width=\columnwidth]{../figs/7_1_semilog.pdf}
+    \caption{}
+    \label{fig:7.1_semilog}
+\end{figure}
 %
 \item Assuming that $N$ is a constant, find an expression for $P_e$. Call this $P_e(N)$.
 

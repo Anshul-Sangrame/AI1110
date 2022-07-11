@@ -23,7 +23,7 @@ plt.xlabel('$n \\times 10^6$')
 plt.ylabel('$y(n)$')
 
 #if using termux
-plt.savefig('../figs/5_2.pdf')
+plt.savefig('../figs/5_2.png')
 #plt.savefig('./figs/uni_cdf.eps')
 #subprocess.run(shlex.split("termux-open ../figs/uni_cdf.pdf"))
 #if using termux
