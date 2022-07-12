@@ -654,7 +654,12 @@ Plot \ref{fig:4.3} is obtained
 The CDF of $T$ is given by
 	\begin{align}
 		F_T(t) = \pr{T \le t} = \pr{U_1 + U_2 \le t}	
-	\end{align}		
+	\end{align}
+	By convolution,
+	\begin{align}
+		F_T(t) &= \int_{-\infty}^{\infty} F_{U_2}(t-x) p_{U_1}(x) \der{x}
+	\end{align}
+	
 	Since $U_1, U_2 \in [0,1] \implies U_1 + U_2 \in [0,2]$
 	Therefore, if $t \ge 2$, then $U_1 + U_2 \le t$ is always true and if $t < 0$, then $U_1 + U_2 \le t$ is always false.
 	

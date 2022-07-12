@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.20 (TeX Live 2019/Debian) (preloaded format=pdflatex 2022.7.5)  11 JUL 2022 12:28
+This is pdfTeX, Version 3.14159265-2.6-1.40.20 (TeX Live 2019/Debian) (preloaded format=pdflatex 2022.7.5)  12 JUL 2022 09:16
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
@@ -1070,37 +1070,40 @@ File: ../figs/tri_pdf_empirical.pdf Graphic file (type pdf)
 <use ../figs/tri_pdf_empirical.pdf>
 Package pdftex.def Info: ../figs/tri_pdf_empirical.pdf  used on input line 645.
 (pdftex.def)             Requested size: 252.0pt x 189.00429pt.
+
+Underfull \vbox (badness 10000) has occurred while \output is active []
+
  [5 <../figs/tri_cdf_empirical.pdf> <../figs/tri_pdf_empirical.pdf>]
-<../figs/tri_pdf.pdf, id=399, 462.52798pt x 346.89601pt>
+<../figs/tri_pdf.pdf, id=397, 462.52798pt x 346.89601pt>
 File: ../figs/tri_pdf.pdf Graphic file (type pdf)
 <use ../figs/tri_pdf.pdf>
-Package pdftex.def Info: ../figs/tri_pdf.pdf  used on input line 736.
+Package pdftex.def Info: ../figs/tri_pdf.pdf  used on input line 741.
 (pdftex.def)             Requested size: 252.0pt x 189.00429pt.
-<../figs/tri_cdf.pdf, id=401, 462.52798pt x 346.89601pt>
+<../figs/tri_cdf.pdf, id=399, 462.52798pt x 346.89601pt>
 File: ../figs/tri_cdf.pdf Graphic file (type pdf)
 <use ../figs/tri_cdf.pdf>
-Package pdftex.def Info: ../figs/tri_cdf.pdf  used on input line 743.
+Package pdftex.def Info: ../figs/tri_cdf.pdf  used on input line 748.
 (pdftex.def)             Requested size: 252.0pt x 189.00429pt.
  [6 <../figs/tri_pdf.pdf> <../figs/tri_cdf.pdf>]
-<../figs/5_2.png, id=492, 462.528pt x 346.896pt>
+<../figs/5_2.png, id=490, 462.528pt x 346.896pt>
 File: ../figs/5_2.png Graphic file (type png)
 <use ../figs/5_2.png>
-Package pdftex.def Info: ../figs/5_2.png  used on input line 804.
+Package pdftex.def Info: ../figs/5_2.png  used on input line 809.
 (pdftex.def)             Requested size: 252.0pt x 189.00427pt.
+
+Underfull \vbox (badness 2245) has occurred while \output is active []
+
  [7 <../figs/5_2.png>]
-<../figs/5_6.pdf, id=538, 462.52798pt x 346.89601pt>
+<../figs/5_6.pdf, id=535, 462.52798pt x 346.89601pt>
 File: ../figs/5_6.pdf Graphic file (type pdf)
 <use ../figs/5_6.pdf>
-Package pdftex.def Info: ../figs/5_6.pdf  used on input line 884.
+Package pdftex.def Info: ../figs/5_6.pdf  used on input line 889.
 (pdftex.def)             Requested size: 252.0pt x 189.00429pt.
-<../figs/5_6_semilog.pdf, id=540, 462.52798pt x 346.89601pt>
+<../figs/5_6_semilog.pdf, id=537, 462.52798pt x 346.89601pt>
 File: ../figs/5_6_semilog.pdf Graphic file (type pdf)
 <use ../figs/5_6_semilog.pdf>
-Package pdftex.def Info: ../figs/5_6_semilog.pdf  used on input line 892.
+Package pdftex.def Info: ../figs/5_6_semilog.pdf  used on input line 897.
 (pdftex.def)             Requested size: 252.0pt x 189.00429pt.
-
-Underfull \vbox (badness 3746) has occurred while \output is active []
-
 
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
@@ -1108,65 +1111,65 @@ Underfull \vbox (badness 10000) has occurred while \output is active []
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
  [9]
-<../figs/chi_cdf.pdf, id=678, 462.52798pt x 346.89601pt>
+<../figs/chi_cdf.pdf, id=679, 462.52798pt x 346.89601pt>
 File: ../figs/chi_cdf.pdf Graphic file (type pdf)
 <use ../figs/chi_cdf.pdf>
-Package pdftex.def Info: ../figs/chi_cdf.pdf  used on input line 1056.
+Package pdftex.def Info: ../figs/chi_cdf.pdf  used on input line 1061.
 (pdftex.def)             Requested size: 252.0pt x 189.00429pt.
-<../figs/chi_pdf.pdf, id=680, 462.52798pt x 346.89601pt>
+<../figs/chi_pdf.pdf, id=681, 462.52798pt x 346.89601pt>
 File: ../figs/chi_pdf.pdf Graphic file (type pdf)
 <use ../figs/chi_pdf.pdf>
-Package pdftex.def Info: ../figs/chi_pdf.pdf  used on input line 1064.
+Package pdftex.def Info: ../figs/chi_pdf.pdf  used on input line 1069.
 (pdftex.def)             Requested size: 252.0pt x 189.00429pt.
 
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
  [10 <../figs/chi_cdf.pdf> <../figs/chi_pdf.pdf>]
-<../figs/ral_cdf.pdf, id=788, 462.52798pt x 346.89601pt>
+<../figs/ral_cdf.pdf, id=789, 462.52798pt x 346.89601pt>
 File: ../figs/ral_cdf.pdf Graphic file (type pdf)
 <use ../figs/ral_cdf.pdf>
-Package pdftex.def Info: ../figs/ral_cdf.pdf  used on input line 1127.
+Package pdftex.def Info: ../figs/ral_cdf.pdf  used on input line 1132.
 (pdftex.def)             Requested size: 252.0pt x 189.00429pt.
-<../figs/ral_pdf.pdf, id=790, 462.52798pt x 346.89601pt>
+<../figs/ral_pdf.pdf, id=791, 462.52798pt x 346.89601pt>
 File: ../figs/ral_pdf.pdf Graphic file (type pdf)
 <use ../figs/ral_pdf.pdf>
-Package pdftex.def Info: ../figs/ral_pdf.pdf  used on input line 1135.
+Package pdftex.def Info: ../figs/ral_pdf.pdf  used on input line 1140.
 (pdftex.def)             Requested size: 252.0pt x 189.00429pt.
-<../figs/7_1.pdf, id=792, 462.52798pt x 346.89601pt>
+<../figs/7_1.pdf, id=793, 462.52798pt x 346.89601pt>
 File: ../figs/7_1.pdf Graphic file (type pdf)
 <use ../figs/7_1.pdf>
-Package pdftex.def Info: ../figs/7_1.pdf  used on input line 1174.
+Package pdftex.def Info: ../figs/7_1.pdf  used on input line 1179.
 (pdftex.def)             Requested size: 252.0pt x 189.00429pt.
-<../figs/7_1_semilog.pdf, id=794, 462.52798pt x 346.89601pt>
+<../figs/7_1_semilog.pdf, id=795, 462.52798pt x 346.89601pt>
 File: ../figs/7_1_semilog.pdf Graphic file (type pdf)
 <use ../figs/7_1_semilog.pdf>
-Package pdftex.def Info: ../figs/7_1_semilog.pdf  used on input line 1182.
+Package pdftex.def Info: ../figs/7_1_semilog.pdf  used on input line 1187.
 (pdftex.def)             Requested size: 252.0pt x 189.00429pt.
  [11 <../figs/ral_cdf.pdf> <../figs/ral_pdf.pdf>]
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
  [12 <../figs/7_1.pdf> <../figs/7_1_semilog.pdf>]
-Package atveryend Info: Empty hook `BeforeClearDocument' on input line 1228.
-Package atveryend Info: Empty hook `AfterLastShipout' on input line 1228.
+Package atveryend Info: Empty hook `BeforeClearDocument' on input line 1233.
+Package atveryend Info: Empty hook `AfterLastShipout' on input line 1233.
  (/home/anshul/programming/AI1110/Assignment/solution/report/main.aux)
-Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 1228.
-Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 1228.
+Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 1233.
+Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 1233.
 Package rerunfilecheck Info: File `main.out' has not changed.
 (rerunfilecheck)             Checksum: 19A11EF976FC8B136F15281E8E0069E5;390.
  ) 
 Here is how much of TeX's memory you used:
- 26182 strings out of 481239
- 498599 string characters out of 5920378
- 837908 words of memory out of 5000000
+ 26183 strings out of 481239
+ 498612 string characters out of 5920378
+ 852908 words of memory out of 5000000
  40559 multiletter control sequences out of 15000+600000
  592798 words of font info for 143 fonts, out of 8000000 for 9000
  1144 hyphenation exceptions out of 8191
- 58i,16n,67p,849b,1870s stack positions out of 5000i,500n,10000p,200000b,80000s
+ 58i,16n,67p,849b,1897s stack positions out of 5000i,500n,10000p,200000b,80000s
 {/usr/share/texlive/texmf-dist/fonts/enc/dvips/base/8r.enc}</usr/share/texlive/texmf-dist/fonts/type1/public/txfonts/rtxmi.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/txfonts/rtxr.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/txfonts/rtxsc.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/txfonts/txex.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/txfonts/txsy.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/txfonts/txsya.pfb></usr/share/texlive/texmf-dist/fonts/type1/urw/times/utmb8a.pfb></usr/share/texlive/texmf-dist/fonts/type1/urw/times/utmr8a.pfb></usr/share/texlive/texmf-dist/fonts/type1/urw/times/utmri8a.pfb>
-Output written on /home/anshul/programming/AI1110/Assignment/solution/report/main.pdf (12 pages, 271106 bytes).
+Output written on /home/anshul/programming/AI1110/Assignment/solution/report/main.pdf (12 pages, 271186 bytes).
 PDF statistics:
- 1094 PDF objects out of 1200 (max. 8388607)
- 669 compressed objects within 7 object streams
- 339 named destinations out of 1000 (max. 500000)
+ 1095 PDF objects out of 1200 (max. 8388607)
+ 670 compressed objects within 7 object streams
+ 340 named destinations out of 1000 (max. 500000)
  154 words of extra memory for PDF output out of 10000 (max. 10000000)
 

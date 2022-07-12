@@ -6,8 +6,8 @@
 int  main(void) //main function begins
 {
  
-// Chi distribution
-chi("chi.dat",1000000);
+// Chi square with degree of freedom = 2 distribution
+chi_sq("chi.dat",2,1000000);
 
 return 0;
 }

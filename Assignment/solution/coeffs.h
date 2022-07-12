@@ -11,15 +11,15 @@ double **transpose(double **a,  int m, int n);
 void uniform(char *str, int len);
 void gaussian(char *str, int len);
 void bernoulli(char *str, int len);
-void bernoulli_gau(char *str,int len);
-void chi(char *str,int len);
-void ral(char *str,int len);
-void ral_gamma(char *str,double gamma,int len);
+void bernoulli_gau(char *str,double A,int len);
+void chi_sq(char *str,int freedom,int len);
+void ral(char *str,double gamma,int len);
 void triangular(char *str, int len);
 double mean(char *str);
 double var(char *str);
 void V_dist(char *str, int len);
 double gau_rand();
+double ber_rand();
 //End function declaration
 
 
@@ -330,7 +330,7 @@ fclose(fp);
 
 //Defining the function for generating one gaussian random numbers
 
-double gau_rand()
+double gau_rand(double sig)
 {
 double temp;
 int j;
@@ -342,11 +342,31 @@ for (j = 0; j < 12; j++)
 temp += (double)rand()/RAND_MAX;
 }
 temp-=6;
+temp *= sig;
 
 return temp;
 }
 
 //End function for generating one gaussian random numbers
+
+//Defining function for generating one bernouilli random numbers
+
+double ber_rand() 
+{
+double term;
+double U = (double)rand()/RAND_MAX;
+
+if(U>0.5) {
+  term = 1.0;
+}
+else{
+  term = -1.0;
+}
+
+return term;
+}
+
+//End function for generating one bernouilli random numbers
 
 //Defining the function for generating bernoulli random numbers
 
@@ -379,7 +399,7 @@ fclose(fp);
 
 //Defining the function for generating 5*bernoulli + gaussian random numbers
 
-void bernoulli_gau(char *str,int len)
+void bernoulli_gau(char *str,double A,int len)
 {
 int i,j;
 double ber;
@@ -388,41 +408,27 @@ double U;
 double temp;
 FILE *fp;
 
+double **b = loadtxt("ber.dat", len, 1);
+double **g = loadtxt("gau.dat", len, 1);
 fp = fopen(str,"w");
 //Generate numbers
 for (i = 0; i < len; i++)
 {
-U = (double)rand()/RAND_MAX;
 
-if(U>0.5) {
-  ber = 1;
-}
-else{
-  ber = -1;
-}
+fprintf(fp, "%lf\n", A*b[i][0] + g[i][0]);
 
-temp = 0.0;
-for (j = 0; j < 12; j++)
-{
-temp += (double)rand()/RAND_MAX;
-}
-temp-=6;
-
-term = pow(10,0.5)*ber + temp;
-
-fprintf(fp,"%lf\n",term);
 }
 fclose(fp);
 }
 
 //End function for generating 5*bernoulli + gaussian random numbers
 
-//Defining the function for generating chi-squared (2 degrees of freedom) random numbers
+//Defining the function for generating chi-squared random numbers
 
-void chi(char *str,int len)
+void chi_sq(char *str,int freedom,int len)
 {
 int i,j;
-double temp1,temp2;
+double temp;
 double term;
 FILE *fp;
 
@@ -430,56 +436,23 @@ fp = fopen(str,"w");
 //Generate numbers
 for (i = 0; i < len; i++)
 {
-temp1 = 0;
-temp2 = 0;
-for (j = 0; j < 12; j++)
-{
-temp1 += (double)rand()/RAND_MAX;
-temp2 += (double)rand()/RAND_MAX;
+term=0;
+
+for(j=0; j<freedom; j++) {
+temp = gau_rand(1);
+term += temp*temp;
 }
-temp1 -= 6;
-temp2 -= 6;
-term = temp1*temp1 + temp2*temp2;
+
 fprintf(fp,"%lf\n",term);
 }
 fclose(fp);
 }
 
-//End function for generating chi-squared (2 degrees of freedom) random numbers
-
-//Defining the function for generating rayleigh random numbers for gamma = 2
-
-void ral(char *str,int len)
-{
-int i,j;
-double temp1,temp2;
-double term;
-FILE *fp;
-
-fp = fopen(str,"w");
-//Generate numbers
-for (i = 0; i < len; i++)
-{
-temp1 = 0;
-temp2 = 0;
-for (j = 0; j < 12; j++)
-{
-temp1 += (double)rand()/RAND_MAX;
-temp2 += (double)rand()/RAND_MAX;
-}
-temp1 -= 6;
-temp2 -= 6;
-term = sqrt(temp1*temp1 + temp2*temp2);
-fprintf(fp,"%lf\n",term);
-}
-fclose(fp);
-}
-
-//End function for generating rayleigh random numbers for gamma = 2
+//End function for generating chi-squared random numbers
 
 //Defining the function for generating rayleigh random numbers for any gamma
 
-void ral_gamma(char *str,double gamma,int len)
+void ral(char *str,double gamma,int len)
 {
 int i,j;
 double temp1,temp2;
@@ -491,18 +464,9 @@ fp = fopen(str,"w");
 //Generate numbers
 for (i = 0; i < len; i++)
 {
-temp1 = 0;
-temp2 = 0;
-for (j = 0; j < 12; j++)
-{
-temp1 += (double)rand()/RAND_MAX;
-temp2 += (double)rand()/RAND_MAX;
-}
-temp1 -= 6;
-temp2 -= 6;
+temp1 = gau_rand(sig);
+temp2 =gau_rand(sig);
 
-temp1*=sig;
-temp2*=sig;
 term = sqrt(temp1*temp1 + temp2*temp2);
 fprintf(fp,"%lf\n",term);
 }

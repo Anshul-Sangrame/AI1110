@@ -6,8 +6,8 @@
 int  main(void) //main function begins
 {
  
-// Chi distribution
-ral("ral.dat",1000000);
+// Rayleigh distribution with gamma = 2
+ral("ral.dat",2,1000000);
 
 return 0;
 }

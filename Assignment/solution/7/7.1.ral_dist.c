@@ -15,7 +15,7 @@ for(i=0;i<21;i++) {
     j = (double)i/2.0;
     gamma = pow(10,j/10.0);
     sprintf(file,"./ral_data/%d",i);
-    ral_gamma(file,gamma,1000000);
+    ral(file,gamma,1000000);
 }
 
 return 0;
